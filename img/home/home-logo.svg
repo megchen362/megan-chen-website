@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="422px" height="314px" viewBox="0 0 422 314" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>home-logo</title>
+    <defs>
+        <path d="M511.250368,161.734905 C558.781243,183.581996 550.004748,231.525847 530.195096,258.137985 C510.670344,281.326262 500.907968,301.235681 500.907968,317.866241 C500.907968,342.81208 584.306552,373.854369 558.781243,427.486453 C530.100329,487.748882 432.499185,469.641757 432.499185,419.200726 C432.499185,368.759696 463.373839,310.662727 463.373839,258.137985 C439.725664,267.645941 410.395232,302.411021 410.395232,397.367849 C410.395232,422.537671 390.020063,439.838832 353.818182,439.838832 C317.616301,439.838832 295.323812,422.537671 295.323812,397.367849 C295.323812,302.411021 264.962436,268.858794 244.262525,258.137985 C244.262525,310.662727 275.137179,353.943655 275.137179,419.200726 C275.137179,471.72797 178.672361,487.444539 148.855122,427.486453 C123.454647,376.40983 206.728396,344.17646 206.728396,317.866241 C206.728396,291.556021 197.25092,284.750124 177.441269,258.137985 C157.631617,231.525847 148.855122,183.581996 196.385997,161.734905 C225.355194,148.419503 264.228137,161.734905 275.137179,193.300147 C286.860727,227.222156 341.136784,332.162841 353.820202,332.162841 C366.50362,332.162841 421.547452,223.209376 432.499185,193.300147 C448.932936,148.419503 482.28117,148.419503 511.250368,161.734905 Z" id="path-1"></path>
+        <filter x="-1.6%" y="-2.1%" width="103.1%" height="104.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="2.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="7" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.995149032   0 0 0 0 0.761969643   0 0 0 0 0.981269306  0 0 0 0.299450428 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="2.5" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="0" dy="-3" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.231372549   0 0 0 0 0.352941176   0 0 0 0 0.258823529  0 0 0 0.203579989 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M-01---Home/Work" transform="translate(-143.000000, -153.000000)" fill-rule="nonzero">
+            <g id="home-logo">
+                <use fill-opacity="0.152310458" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use stroke-opacity="0.498577838" stroke="#FFB7FB" stroke-width="1" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
