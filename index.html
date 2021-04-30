@@ -2,51 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hey, it's Megan.</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="https://kit.fontawesome.com/98a4d492ec.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body class="hero">
     <header>
       <div>
-          <img alt="Megan's Lil Logo" src="img/header-logo.svg">
+        <img class="header-logo" alt="Megan's Lil Logo" src="img/header-logo.svg">
+        <div class="navtoggle" id="myNavToggle">
           <nav>
-            <ul>
-              <li><a href="#work">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <ul class="header-nav">
+              <li><a class="hvr-outline-out" href="work.html">Work</a></li>
+              <li><a class="hvr-outline-out" href="about.html">About</a></li>
+              <li><a class="hvr-outline-out" href="#contact" onclick="menuToggle()">Contact</a></li>
             </ul>
           </nav>
+        </div>
       </div>
     </header>
+
     <main>
-      <div class="hero">
-          <h1>I'm Megan Chen.</h1>
-          <p>I’m a visual designer based in Memphis, TN.</p>
-          <img src="img/home/home-logo.svg" alt="Megan's Logo">
-      </div>
+      <div class="container">
+        <div class="hero-landing">
+          <div class="hero-text">
+            <h1>I'm Megan Chen.</h1>
+            <p>I’m a visual designer based in Memphis, TN.</p>
+          </div>
+          <img class="home-logo" src="img/home/home-logo.svg" alt="Megan's Logo">
+        </div>
+
       <div id="work">
+
         <div class="preview rfrm">
           <picture>
-          <source srcset="img/rfrm/@1x/rfrm-cover-img.png" media="(max-width:767px)">
-          <img alt="RFRM Preview" src="img/rfrm/@2x/rfrm-cover-img@2x.png">
-        </picture>
-          <div class="preview-content">
-            <h2>RFRM</h2>
-            <p>With an open-ended design brief and a new-found interest in social and political issues, I designed RFRM as an educational resource for users to access podcasts, news articles, and books on one platform.
-              <br>
-              <br>
-              The process for the native iOS and Android application involved a competitor analysis, user flow diagrams, multiple wireframe iterations, user testing, and peer critiques to create a user-centered design.
-            </p>
-            <a class="button" href="rfrm.html">Read more</a>
-          </div>
+            <source srcset="img/rfrm/@1x/rfrm-cover-img.png" media="(max-width:767px)">
+              <img class="cover-img" alt="RFRM Preview" src="img/rfrm/@2x/rfrm-cover-img@2x.png">
+          </picture>
+        </div>
+        <div class="preview-content">
+          <h2>RFRM</h2>
+          <p>With an open-ended design brief and a new-found interest in social and political issues, I designed RFRM as an educational resource for users to access podcasts, news articles, and books on one platform.
+            <br>
+            <br>
+            The process for the native iOS and Android application involved a competitor analysis, user flow diagrams, multiple wireframe iterations, user testing, and peer critiques to create a user-centered design.
+          </p>
+          <a class="button" href="rfrm.html">Read more</a>
         </div>
 
         <div class="preview dimes">
           <picture>
             <source srcset="img/dimes/@1x/dimes-cover-img.png" media="(max-width:767px)">
-            <img alt="Dimes Preview" src="img/dimes/@2x/dimes-cover-img@2x.png">
+            <img class="cover-img" alt="Dimes Preview" src="img/dimes/@2x/dimes-cover-img@2x.png">
           </picture>
           <div class="preview-content">
             <h2>Dimes</h2>
@@ -59,10 +68,22 @@
           </div>
         </div>
 
+        <div class="preview artlo">
+          <picture>
+            <source srcset="img/artlo/@1x/artlo-cover-img.png" media="(max-width:767px)">
+            <img class="cover-img" alt="ARTLO. Preview" src="img/artlo/@2x/artlo-cover-img@2x.png">
+          </picture>
+          <div>
+            <h2>ARTLO.</h2>
+            <p></p>
+            <a class="button" href="artlo.html">Read more</a>
+          </div>
+        </div>
+
         <div class="preview tuc">
           <picture>
             <source srcset="img/tuc/@1x/tuc-cover-img.png" media="(max-width:767px)">
-            <img alt="The Unseasoned Chef Preview" src="img/tuc/@2x/tuc-cover-img@2x.png">
+            <img class="cover-img" alt="The Unseasoned Chef Preview" src="img/tuc/@2x/tuc-cover-img@2x.png">
           </picture>
           <div>
             <h2>The Unseasoned Chef</h2>
@@ -71,8 +92,10 @@
           </div>
         </div>
       </div>
+    </div>
     </main>
     <footer>
     </footer>
+  <script src="script.js"></script>
   </body>
 </html>

@@ -3,12 +3,13 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 1.6;
@@ -18,15 +19,15 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
   font-family: 'Syne', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.25em;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.0em;
   text-align: center;
   padding: 20px;
 }
@@ -42,8 +43,25 @@ h4 {
 /* === Header Styling ===*/
 
 header {
-  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 1em;
+  width: 100%;
+  display: block;
+}
+
+.header-logo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 7px;
+  max-width:150px;
   display: inline-block;
+}
+
+.navtoggle {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 2em;
 }
 
 nav {
@@ -54,8 +72,95 @@ nav {
 
 nav > ul {
   list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin: 0;
 }
+
+nav > ul > li {
+  display: inline-block;
+  padding: 0 0.75em;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* === Button styling === */
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #303030;
+}
+
+.button {
+  padding: 1em 2.5em;
+  border: 2px solid #303030;
+}
+
+/* === Home page styling === */
 
 .hero {
   background-image: url('../img/home/background-home-320px.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-landing {
+  margin-top: 4em;
+  margin-bottom: 8em;
+}
+
+.hero-text {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  padding-left: 10px;
+  top: 13.5em;
+}
+
+.home-logo {
+  position: relative;
+  z-index: -1;
+  padding: 10px;
+  width: 100%;
+}
+
+.preview-content > p {
+  text-align: left;
+}
+
+.preview-content {
+  padding: 10px;
+}
+
+.preview {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+}
+
+.cover-img {
+  width: 100%;
+  padding: 3em;
+}
+
+.preview.rfrm {
+  background-image: url('../img/home/background-rfrm-320px.png');
+}
+
+
+.preview.dimes {
+  background-image: url('../img/home/background-dimes-320px.png');
+}
+
+.preview.artlo {
+  background-image: url('../img/home/background-artlo-320px.png');
+}
+
+.preview.tuc {
+  background-image: url('../img/home/background-tuc-320px.png');
 }
