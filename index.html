@@ -1,101 +1,129 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hey, it's Megan.</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <script src="https://kit.fontawesome.com/98a4d492ec.js" crossorigin="anonymous"></script>
-  </head>
-  <body class="hero">
-    <header>
-      <div>
-        <img class="header-logo" alt="Megan's Lil Logo" src="img/header-logo.svg">
-        <div class="navtoggle" id="myNavToggle">
-          <nav>
-            <ul class="header-nav">
-              <li><a class="hvr-outline-out" href="work.html">Work</a></li>
-              <li><a class="hvr-outline-out" href="about.html">About</a></li>
-              <li><a class="hvr-outline-out" href="#contact" onclick="menuToggle()">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
 
-    <main>
-      <div class="container">
-        <div class="hero-landing">
-          <div class="hero-text">
-            <h1>I'm Megan Chen.</h1>
-            <p>I’m a visual designer based in Memphis, TN.</p>
-          </div>
-          <img class="home-logo" src="img/home/home-logo.svg" alt="Megan's Logo">
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hey, it's Megan.</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/98a4d492ec.js" crossorigin="anonymous"></script>
+</head>
 
-      <div id="work">
-
-        <div class="preview rfrm">
-          <picture>
-            <source srcset="img/rfrm/@1x/rfrm-cover-img.png" media="(max-width:767px)">
-              <img class="cover-img" alt="RFRM Preview" src="img/rfrm/@2x/rfrm-cover-img@2x.png">
-          </picture>
-        </div>
-        <div class="preview-content">
-          <h2>RFRM</h2>
-          <p>With an open-ended design brief and a new-found interest in social and political issues, I designed RFRM as an educational resource for users to access podcasts, news articles, and books on one platform.
-            <br>
-            <br>
-            The process for the native iOS and Android application involved a competitor analysis, user flow diagrams, multiple wireframe iterations, user testing, and peer critiques to create a user-centered design.
-          </p>
-          <a class="button" href="rfrm.html">Read more</a>
-        </div>
-
-        <div class="preview dimes">
-          <picture>
-            <source srcset="img/dimes/@1x/dimes-cover-img.png" media="(max-width:767px)">
-            <img class="cover-img" alt="Dimes Preview" src="img/dimes/@2x/dimes-cover-img@2x.png">
-          </picture>
-          <div class="preview-content">
-            <h2>Dimes</h2>
-            <p>Dimes is an application for users who are just beginning their finance tracking & management journey.
-              <br>
-              <br>
-              From user research and user flow diagrams to wireframes and interactive prototypes, I received valuable insight and feedback for an interface that highlights important features and minimizes user frustrations.
-            </p>
-            <a class="button" href="dime.html">Read More</a>
-          </div>
-        </div>
-
-        <div class="preview artlo">
-          <picture>
-            <source srcset="img/artlo/@1x/artlo-cover-img.png" media="(max-width:767px)">
-            <img class="cover-img" alt="ARTLO. Preview" src="img/artlo/@2x/artlo-cover-img@2x.png">
-          </picture>
-          <div>
-            <h2>ARTLO.</h2>
-            <p></p>
-            <a class="button" href="artlo.html">Read more</a>
-          </div>
-        </div>
-
-        <div class="preview tuc">
-          <picture>
-            <source srcset="img/tuc/@1x/tuc-cover-img.png" media="(max-width:767px)">
-            <img class="cover-img" alt="The Unseasoned Chef Preview" src="img/tuc/@2x/tuc-cover-img@2x.png">
-          </picture>
-          <div>
-            <h2>The Unseasoned Chef</h2>
-            <p></p>
-            <a class="button" href="tuc.html">Read more</a>
-          </div>
-        </div>
+<body class="hero">
+  <header>
+    <div>
+      <img class="header-logo" alt="Megan's Lil Logo" src="img/header-logo.svg">
+      <div class="navtoggle" id="myNavToggle">
+        <nav>
+          <ul class="header-nav">
+            <li><a href="#work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
-    </main>
-    <footer>
-    </footer>
+  </header>
+
+  <main>
+    <div class="hero-landing">
+      <div class="hero-text">
+        <h1>I'm Megan Chen.</h1>
+        <p>I’m a visual designer based in Memphis, TN.</p>
+      </div>
+      <img class="home-logo" src="img/home/home-logo.svg" alt="Megan's Logo">
+    </div>
+
+      <div class="card rfrm" onclick="this.classList.toggle('expanded')">
+        <img class="rfrm-cover-img" src="img/rfrm/@1x/rfrm-cover-img.png" alt="RFRM">
+        <div class="text1">
+          <div class="text-content">
+            <h1 class="title">RFRM</h1>
+            <div class="body-text">
+              <p>With an open-ended design brief and a new-found interest in social and political issues, I designed RFRM as an educational resource for users to access podcasts, news articles, and books on one platform.
+                <br>
+                <br>
+                The process for the native iOS and Android application involved a competitor analysis, user flow diagrams, multiple wireframe iterations, user testing, and peer critiques to create a user-centered design.
+              </p>
+            </div>
+            <a class="button read-more" href="rfrm.html">Read more</a>
+          </div>
+        </div>
+        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
+          <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
+        </svg>
+      </div>
+
+    <div class="card dimes" onclick="this.classList.toggle('expanded')">
+      <img class="dimes-cover-img" src="img/dimes/@1x/dimes-cover-img.png" alt="Dimes Preview">
+      <div class="text1">
+        <div class="text-content contrast">
+          <h2>Dimes</h2>
+          <div class="body-text">
+            <p>With an open-ended design brief and a new-found interest in social and political issues, I designed RFRM as an educational resource for users to access podcasts, news articles, and books on one platform.
+              <br>
+              <br>
+              The process for the native iOS and Android application involved a competitor analysis, user flow diagrams, multiple wireframe iterations, user testing, and peer critiques to create a user-centered design.
+            </p>
+          </div>
+          <a class="button read-more contrast" href="dimes.html">Read more</a>
+        </div>
+      </div>
+      <svg class="chevron contrast" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
+        <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
+      </svg>
+    </div>
+
+
+    <div class="card artlo" onclick="this.classList.toggle('expanded')">
+      <img class="artlo-cover-img" src="img/artlo/@1x/artlo-cover-img.png" alt="ARTLO. Preview">
+      <div class="text1">
+        <div class="text-content contrast">
+          <h2>ARTLO.</h2>
+          <div class="body-text">
+            <p>With an open-ended design brief and a new-found interest in social and political issues, I designed RFRM as an educational resource for users to access podcasts, news articles, and books on one platform.
+              <br>
+              <br>
+              The process for the native iOS and Android application involved a competitor analysis, user flow diagrams, multiple wireframe iterations, user testing, and peer critiques to create a user-centered design.
+            </p>
+          </div>
+          <a class="button read-more contrast" href="artlo.html">Read more</a>
+        </div>
+      </div>
+      <svg class="chevron contrast" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
+        <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
+      </svg>
+    </div>
+
+    <div class="card tuc" onclick="this.classList.toggle('expanded')">
+      <img class="tuc-cover-img" src="img/tuc/@1x/tuc-cover-img.png" alt="The Unseasoned Chef Preview">
+      <div class="text1">
+        <div class="text-content">
+          <h2>The Unseasoned Chef</h2>
+          <div class="body-text">
+            <p>With an open-ended design brief and a new-found interest in social and political issues, I designed RFRM as an educational resource for users to access podcasts, news articles, and books on one platform.
+              <br>
+              <br>
+              The process for the native iOS and Android application involved a competitor analysis, user flow diagrams, multiple wireframe iterations, user testing, and peer critiques to create a user-centered design.
+            </p>
+          </div>
+          <a class="button read-more" href="tuc.html">Read more</a>
+        </div>
+      </div>
+      <svg class="chevron contrast" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
+        <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
+      </svg>
+    </div>
+
+  </main>
+  <footer id="contact">
+    <div class="contact-info">
+      <h5>Megan Chen</h5>
+      <p>@2021, All Rights Reserved</p>
+    </div>
+  </footer>
   <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
