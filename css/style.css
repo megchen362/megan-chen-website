@@ -25,11 +25,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 2.0em;
+  font-size: 2em;
   text-align: center;
   padding: 10px;
 }
@@ -157,19 +157,19 @@ footer {
   margin-bottom: 2em;
 }
 
-.rfrm {
+.rfrm-preview {
   background-image: url('../img/home/background-rfrm-320px.png');
 }
 
-.dimes {
+.dimes-preview {
   background-image: url('../img/home/background-dimes-320px.png');
 }
 
-.artlo{
+.artlo-preview{
   background-image: url('../img/home/background-artlo-320px.png');
 }
 
-.tuc {
+.tuc-preview {
   background-image: url('../img/home/background-tuc-320px.png');
 }
 
@@ -206,7 +206,7 @@ footer {
 .card.expanded {
   height: 800px;
 }
-.card.tuc.expanded {
+.card.tuc-preview.expanded {
   height: 900px;
 }
 .text1 {
@@ -246,10 +246,126 @@ footer {
   transform: rotate(0deg);
 }
 .body-text {
-  text-align: left;
+  text-align: justify;
   opacity: 0;
 }
 .card.expanded .body-text {
   opacity: 1;
   transition-duration: 0.7s;
+}
+
+
+/* === Project page ===*/
+
+.scroll-button {
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+.scroll-top {
+  border-radius: 50%;
+  border: 2px solid #303030;
+}
+
+
+
+.project-header {
+  background-image: url('../img/background-header-320px.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-background {
+  background-image: url('../img/rfrm/@1x/project-background-rfrm-320px.png');
+  background-size: 100% 100%;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.project-background.top {
+  position: relative;
+  top: -20px;
+}
+
+.project-title {
+  text-align: left;
+  border-top: 2px solid #303030;
+  margin-top: 4em;
+  padding-bottom:8em;
+}
+
+.project-title > h1 {
+  margin-top: 12px;
+}
+
+.project-title.screens {
+  padding-bottom: 12px;
+}
+
+.rfrm-project-img.title {
+  margin-top: 8em;
+  margin-bottom: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 80%;
+}
+
+.project-content {
+  padding: 0 10px;
+  margin-top: 4em;
+  margin-bottom: 8em;
+  text-align: left;
+}
+
+.project-content h3 {
+  padding-top: 8px;
+  border-top: 2px solid #303030;
+}
+
+.project-content p {
+  text-align: justify;
+}
+
+.project-background.bottom {
+  margin-bottom: 8em;
+}
+
+.rfrm-project-img {
+  width: 80%;
+}
+
+.rfrm-styling {
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.project-content > .rfrm-styling > h3 {
+  margin-top: 1.25em;
+  margin-bottom: 0;
+  border-top: none;
+}
+
+.rfrm-styling p {
+  text-align: center;
+  margin-top: 0.25em;
+  margin-bottom: 2em;
+}
+
+.rfrm-style-1 {
+  font-family: 'DM Serif Display', 'serif';
+  font-weight: normal;
+}
+
+.rfrm-style-2 {
+  font-family: 'SF Pro Text', 'sans-serif';
+  font-weight: normal;
+}
+
+.rfrm-style-3 {
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: normal;
 }
