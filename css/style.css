@@ -297,8 +297,27 @@ footer {
   background-repeat: no-repeat;
 }
 
+.project-background.rfrm {
+  background-image: url('../img/rfrm/@1x/project-background-rfrm.png');
+}
+
+.project-background.dimes {
+  background-image: url('../img/dimes/@1x/project-background-dimes.png');
+}
+
+.project-background.tuc {
+  background-image: url('../img/tuc/@1x/project-background-tuc.png');
+}
+
+.project-background.artlo {
+  background-image: url('../img/artlo/@1x/project-background-artlo.png');
+}
+
+.project-background.about {
+  background-image: url('../img/about-background.png');
+}
+
 .project-background {
-  background-image: url('../img/rfrm/@1x/project-background-rfrm-320px.png');
   background-size: 100% 100%;
   background-position: center;
   text-align: center;
@@ -326,7 +345,7 @@ footer {
   padding-bottom: 12px;
 }
 
-.rfrm-project-img.title {
+.project-img.title {
   margin-top: 8em;
   margin-bottom: 1.5em;
   margin-left: 10px;
@@ -354,7 +373,7 @@ footer {
   margin-bottom: 8em;
 }
 
-.rfrm-project-img {
+.project-img {
   width: 80%;
 }
 
@@ -389,4 +408,34 @@ footer {
 .rfrm-style-3 {
   font-family: 'Roboto', 'sans-serif';
   font-weight: normal;
+}
+/* === About styling ===*/
+
+.about-content {
+  margin: 5em 0;
+}
+
+.about-title {
+  text-align: left;
+  border-top: 2px solid #303030;
+  margin-top: 3em;
+}
+
+.about-title h1 {
+  margin-top: 12px;
+}
+
+.about-img {
+  width: 80%;
+}
+
+.about-background {
+  background-image: url('../img/about-background.png');
+  background-size: 100% 100%;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  top: -3em;
 }
