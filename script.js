@@ -15,7 +15,6 @@ let mainSections = document.querySelectorAll("main section");
 let lastId;
 let cur = [];
 
-
 //Get the button:
 mybutton = document.getElementById("button-top");
 
