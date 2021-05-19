@@ -13,11 +13,13 @@
 <body class="project-header">
   <header>
     <div id="nav">
-      <img class="header-logo" alt="Megan's Lil Logo" src="img/header-logo.svg">
+      <a href="index.html">
+        <img class="header-logo" alt="Megan's Lil Logo" src="img/general/header-logo.svg">
+      </a>
       <div class="navtoggle" id="myNavToggle">
         <nav>
           <ul class="header-nav">
-            <li><a href="#work">Work</a></li>
+            <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -34,8 +36,8 @@
     </button>
 
     <div class="project-background tuc top">
-      <img class="project-img title" src="img/tuc/@1x/tuc-cover-img.png" alt="The Unseasoned Chef Project">
-      <div class="project-title top">
+      <img class="project-img title tuc" src="img/tuc/@1x/tuc-cover-img.png" alt="The Unseasoned Chef Project">
+      <div class="project-content title tuc">
         <h1>The Unseasoned Chef</h1>
       </div>
     </div>
@@ -47,9 +49,16 @@
       </p>
     </div>
 
-    <div class="project-content">
-      <h3>Objective</h3>
-      <p>This is a responsive web application that will provide beginner chefs with cooking lessons, recipe discovery, and healthy eating tips for users who want to become more comfortable in the kitchen.</p>
+    <div class="project-background tuc">
+      <img class="project-img tuc multi-mockup" src="img/tuc/@1x/tuc-multi-screen.png" alt="TUC Multi-Mockup">
+      <div class="project-content multi-mockup">
+        <h3>Objective</h3>
+        <p>This is a responsive web application that will provide beginner chefs with cooking lessons, recipe discovery, and healthy eating tips for users who want to become more comfortable in the kitchen.</p>
+      </div>
+    </div>
+
+    <div class="img-container">
+      <img class="project-img tuc mockup" src="img/tuc/@1x/tuc-recipe-mock.png" alt="The Unseasoned Chef Recipe">
     </div>
 
     <div class="project-content">
@@ -97,12 +106,16 @@
           <strong>80%</strong> of users claim their journey to comfort in the kitchen <strong>began when they went college.</strong>
         </p>
         <p>Based on these findings, I created three user personas to inform my preliminary sketches and wireframes, focusing on key features like instructional videos and a diet filter option. </p>
+        <img class="project-img tuc persona" src="img/tuc/@1x/tuc-marco.png" alt="User Persona 1">
+        <img class="project-img tuc persona" src="img/tuc/@1x/tuc-jessica.png" alt="User Persona 2">
+        <img class="project-img tuc persona" src="img/tuc/@1x/tuc-claire.png" alt="User Persona 3">
       </div>
     </div>
 
     <div class="project-content">
       <h3>Sketches</h3>
       <p>After some speed-sketching exercises to explore all layout ideas, I landed on these loosely drawn designs as a jumping off point. With these sketches, I conducted usability testing to ensure a cohesive and efficient user flow. </p>
+      <img class="project-img prelim tuc" src="img/tuc/@1x/tuc-prelim-sketches.png" alt="Preliminary Sketches">
     </div>
 
 
@@ -115,8 +128,56 @@
         <li>More access to search bar on the main page</li>
       </ul>
       <p>After perfecting the user flows and designs in the usability testing, I began designing the low-, mid-, and high-fidelity wireframes. </p>
-
     </div>
+
+    <div class="project-content">
+      <h3>Low-Fidelity Wireframes</h3>
+      <img class="project-img tuc" src="img/tuc/@1x/tuc-low.png" alt="TUC Low-Fidelity Wireframes">
+    </div>
+
+    <div class="project-content">
+      <h3>Mid-Fidelity Wireframes</h3>
+      <img class="project-img tuc" src="img/tuc/@1x/tuc-mid.png" alt="TUC Mid-Fidelity Wireframes">
+    </div>
+
+    <div class="project-content">
+      <h3>High-Fidelity Wireframes</h3>
+      <img class="project-img tuc" src="img/tuc/@1x/tuc-high.png" alt="TUC High-Fidelity Wireframes">
+    </div>
+
+    <div class="project-background tuc">
+      <div class="project-content">
+        <h3>Preference Test</h3>
+        <p>Before I finalized the UI for The Unseasoned Chef, I designed two possible layouts to present a recipe’s nutrition values. In order to decide which screen worked best, I conduct a preference test for users to provide input.</p>
+        <img class="project-img tuc pref-test" src="img/tuc/@1x/tuc-pref-test.png" alt="TUC Preference Testing">
+        <h3>Final UI</h3>
+        <img class="project-img tuc" src="img/tuc/@1x/tuc-final.png" alt="TUC Final User Interfaces">
+        <p>After creating the high-fidelity wireframes, I organized a round of critique from peers in order to gain valuable feedback and assure that all breakpoints were consistent in design. This final round of critique was important to creating a
+          functional, responsive web application.</p>
+      </div>
+    </div>
+
+    <div class="project-content">
+      <h3>Responsive Design</h3>
+      <img class="project-img tuc" src="img/tuc/@1x/tuc-responsive.png" alt="TUC Responsive Screens">
+    </div>
+
+    <div class="project-background tuc">
+      <div class="project-content">
+        <h3>Reflection</h3>
+        <div class="reflection">
+          <h5>What went well?</h5>
+          <p>I am very satisfied with the end product and the cohesive layouts for each responsive breakpoint. The color palette and typography choices help the application stand out from the already saturated market. I enjoyed conducting the user
+            testing and creating prototypes to ensure an efficient and usable user flow.</p>
+          <h5>What didn't go well?</h5>
+          <p>As this project began with a mobile-first approach, the larger breakpoints feel a bit heavier and less-refined.</p>
+          <h5>What could be improved?</h5>
+          <p>The layout for the larger breakpoints can be improved by workshopping alternative options and conducting user testing to determind interface pain points and frustrations. The color palette, chosen for the calming and friendly blues, I
+            think shades of green and pastel orange could also be beneficial to this design for a warm and earthly tone.</p>
+          <h5>Moving Forward</h5>
+          <p>Moving forward, I plan to incorporate the competitor/SWOT analyses into my future projects to better understand each specific market. I think that each responsive breakpoint requires user testing to help determine layout issues.</p>
+        </div>
+
 
 
 
