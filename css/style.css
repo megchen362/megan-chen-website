@@ -73,7 +73,6 @@ nav>ul {
   list-style-type: none;
   padding: 0;
   text-align: center;
-  margin: 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -105,7 +104,7 @@ nav>ul>li>a {
   text-transform: uppercase;
   color: #303030;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* === Button styling === */
@@ -169,7 +168,7 @@ footer {
 /* === Home page styling === */
 .hero {
   background-image: url('../img/home/background-home-320px.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -576,6 +575,8 @@ Medium devices (640px and larger)
 
 @media only screen and (min-width: 640px) {
 
+  /* ====== Header ======== */
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -584,11 +585,95 @@ Medium devices (640px and larger)
   display: none;
 }
 
-  nav > ul.header-nav {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 2em;
+.navtoggle {
+  display:flex;
+  align-items: center;
 }
+
+  nav > ul.header-nav {
+  position: unset;
+  right: 0;
+  display: flex;
+  margin-top:0;
+  margin-bottom: 0;
+}
+
+ul.header-nav > li {
+  display: inline-block;
+  border-left: 2px solid #303030;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#nav {
+  border: 2px solid #303030;
+  margin-top: 20px;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.header-logo {
+  max-width: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ /*=== Main ===*/
+
+ .grid-m {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: 50% 50%;
+ }
+
+ .card.rfrm-preview {
+   grid-column-start: 1;
+   grid-column-end: 6;
+   grid-row-start: 1;
+   grid-row-end: 2;
+ }
+ .card.tuc-preview {
+   grid-column-start: 6;
+   grid-column-end: 13;
+   grid-row-start: 1;
+   grid-row-end: 2;
+ }
+
+ .card.dimes-preview {
+   grid-row-start:2;
+   grid-row-end:auto;
+   grid-column-start: 1;
+   grid-column-end: 7;
+ }
+
+ .card.artlo-preview {
+   grid-row-start: 2;
+   grid-row-end: auto;
+   grid-column-start: 7;
+   grid-column-end: 13;
+ }
+
+ .hero-landing {
+   margin-top: 6em;
+ }
+
+ .home-logo {
+   width: 80%;
+   left: 6em;
+ }
+
+ .hero-text {
+   top: 22em;
+   left: 2em;
+ }
+
+
+
 
 }
