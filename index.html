@@ -11,20 +11,27 @@
 </head>
 
 <body class="hero">
-  <header>
-    <div id="nav">
-      <img class="header-logo" alt="Megan's Lil Logo" src="img/general/header-logo.svg">
-      <div class="navtoggle" id="myNavToggle">
-        <nav>
-          <ul class="header-nav">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#">
+        <img class="header-logo" alt="Megan's Lil Logo" src="img/general/header-logo.svg">
+      </a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </nav>
-      </div>
-    </div>
   </header>
 
   <main>
@@ -36,17 +43,13 @@
       <img class="home-logo" src="img/home/home-logo.svg" alt="Megan's Logo">
     </div>
 
-    <div class="grid-m">
+    <div class="grid">
 
-    <div class="card rfrm-preview">
-      <picture>
-        <source srcset="img/rfrm/@1x/rfrm-cover-img.png" media="(max-width:767px)">
-        <img class="rfrm-cover-img" src="img/rfrm/@2x/rfrm-cover-img@2x.png" alt="RFRM">
-      </picture>
-      <div class="overlay rfrm-preview text1">
-        <div class="text-content">
-          <h1 class="title">RFRM</h1>
-          <div class="body-text">
+    <div class="card expanded rfrm-preview" onclick="this.classList.toggle('expanded')">
+      <img class="preview-img" src="img/rfrm/@1x/rfrm-cover-img.png" alt="RFRM Preview">
+        <div class="preview-content">
+          <h2>RFRM</h2>
+          <div class="preview-description">
             <p>With an open-ended design brief and a new-found interest in social and political issues, I designed RFRM as an educational resource for users to access podcasts, news articles, and books on one platform.
               <br>
               <br>
@@ -55,36 +58,26 @@
           </div>
           <a class="button read-more" href="rfrm.html">Read more</a>
         </div>
-      </div>
     </div>
 
-    <div class="card dimes-preview">
-      <picture>
-        <source srcset="img/dimes/@1x/dimes-cover-img.png" media="(max-width:767px)">
-        <img class="dimes-cover-img" src="img/dimes/@2x/dimes-cover-img@2x.png" alt="Dimes Preview">
-      </picture>
-      <div class="overlay dimes-preview text1">
-        <div class="text-content contrast">
+    <div class="card expanded dimes-preview" onclick="this.classList.toggle('expanded')">
+      <img class="preview-img wide" src="img/dimes/@1x/dimes-cover-img.png" alt="Dimes Preview">
+        <div class="preview-content dimes-preview contrast">
           <h2>Dimes</h2>
-          <div class="body-text">
+          <div class="text">
             <p>Dimes was created to ease the stress and intimidation that comes from finances and budgeting. Our easy-to-use platform and engaging design make the path to financial literacy enjoyable and gratifying.
             </p>
           </div>
           <a class="button read-more contrast" href="dimes.html">Read more</a>
         </div>
       </div>
-    </div>
 
 
-    <div class="card artlo-preview">
-      <picture>
-        <source srcset="img/artlo/@1x/artlo-cover-img.png" media="(max-width:767px)">
-        <img class="artlo-cover-img" src="img/artlo/@2x/artlo-cover-img@2x.png" alt="ARTLO. Preview">
-      </picture>
-      <div class="overlay artlo-preview text1">
-        <div class="text-content contrast">
+    <div class="card expanded artlo-preview" onclick="this.classList.toggle('expanded')">
+      <img class="preview-img" src="img/artlo/@1x/artlo-cover-img.png" alt="ARTLO. Preview">
+        <div class="preview-content contrast">
           <h2>ARTLO.</h2>
-          <div class="body-text">
+          <div class="preview-description">
             <p>The idea for ARTLO. was born from challenges selling work and supporting local businesses. I wanted to expand my circle and knowledge of local creatives to include musicians, shops, and other makers, to uplift the many artists and
               talents in my backyard.
               <br>
@@ -95,27 +88,19 @@
           <a class="button read-more contrast" href="artlo.html">Read more</a>
         </div>
       </div>
-    </div>
 
-    <div class="card tuc-preview" >
-      <picture>
-        <source srcset="img/tuc/@1x/tuc-cover-img.png" media="(max-width:767px)">
-        <img class="tuc-cover-img" src="img/tuc/@2x/tuc-cover-img@2x.png" alt="The Unseasoned Chef Preview">
-      </picture>
-      <div class="overlay tuc-preview text1">
-        <div class="items text-content">
-          <h2>The Unseasoned Chef</h2>
-          <div class="items body-text">
+
+    <div class="card expanded tuc-preview" onclick="this.classList.toggle('expanded')">
+      <img class="preview-img wide" src="img/tuc/@1x/tuc-cover-img.png" alt="The Unseasoned Chef Preview">
+        <div class="preview-content">
+          <h3>The Unseasoned Chef</h3>
+          <div class="preview-description">
             <p>Cooking can seem intimidating for beginners or even for the intermediate-level chef. The Unseasoned Chef is a recipe and food-based app to provide a central location for newcomers and novices alike.
-              <br>
-              <br>
-              With a multitude of educational resources to get users comfortable around the kitchen, they’ll be able to move onto bigger and more complex recipes in the future and potentially move away from recipes altogether.
             </p>
           </div>
-          <a class="items button read-more" href="tuc.html">Read more</a>
+          <a class="button read-more" href="tuc.html">Read more</a>
         </div>
       </div>
-    </div>
 </div>
   </main>
   <footer id="contact">

@@ -11,22 +11,27 @@
 </head>
 
 <body class="project-header">
-  <header>
-    <div id="nav">
-      <a href="index.html">
-      <img class="header-logo" alt="Megan's Lil Logo" src="img/general/header-logo.svg">
-    </a>
-      <div class="navtoggle" id="myNavToggle">
-        <nav>
-          <ul class="header-nav">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#">
+        <img class="header-logo" alt="Megan's Lil Logo" src="img/general/header-logo.svg">
+      </a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </nav>
-      </div>
-    </div>
   </header>
   <main>
     <button onclick="topFunction()" id="button-top" title="Button's Up!">
@@ -37,78 +42,98 @@
 
     <div class="project-background artlo top">
       <img class="project-img title" src="img/artlo/@1x/artlo-cover-img.png" alt="ARTLO. Project">
-      <div class="project-content title">
+      <div class="project-content title artlo">
         <h1>ARTLO.</h1>
       </div>
     </div>
 
     <div class="project-content">
       <h3>Overview</h3>
-      <p>Every year comes with new challenges, headlines, and celebrations. The year of 2020 is no different.
+      <p>The idea for ARTLO. was born from my challenges selling work and supporting local businesses. I wanted to expand my circle and knowledge of local creatives to include musicians, shops, and other makers, to uplift the many artists and talents
+        in my backyard.
         <br>
         <br>
-        From conversations on the country’s healthcare system to systemic racism, the desire to be more informed and take action has never been more important. It’s this idea that drives RFRM to provide eductional resources on issues users care
-        about.
-        <br>
-        <br>
-        Doing the internal work is hard, but RFRM is here to help.
+        ARTLO. is a platform to showcase any city’s unique voice through the people who live there and the work they put into their art, music, events, and businesses.
       </p>
     </div>
 
+    <div class="project-content">
+      <h3>Objective</h3>
+      <p>ARTLO. is a native application designed to connect consumers to artists and small businesses in their community. By selecting a specific city, users can browse visual art, blog posts, and local events on a vibrant, inviting interface. </p>
+    </div>
+
     <div class="project-background artlo">
-      <img class="project-img" src="img/rfrm/@1x/rfrm-podcast.png" alt="RFRM Podcast Mockup">
-      <div class="project-content">
-        <h3>Purpose</h3>
-        <p>Through a deep reflection of the past year — the spreading of COVID-19, the Black Lives Matter protests, the death of Ruth Bader Ginsburg, the entirety of the 2020 election, and all of the other historic headlines — I, like many of my
-          peers, found a true desire for growth in both my knowledge of issues and my ability to take action. RFRM is the result of that desire.
+      <picture>
+        <source srcset="img/artlo/@1x/artlo-multi-screen.png" media="(max-width:767px)">
+        <img class="project-img artlo multi-mockup" src="img/artlo/@2x/artlo-multi-screen@2x.png" alt="ARTLO. Screens">
+      </picture>
+      <div class="project-content artlo">
+        <h3>Process</h3>
+        <p><strong>Research:</strong> I studied designs from Etsy, Craiglist, ASOS, and Depop to desseminate the most important features, layouts, and flows for users.
           <br>
           <br>
-          It can be difficult to stoke the fire of change while navigating through the highly saturated market of news apps and podcasts. RFRM simplifies that process by recommending podcasts, articles, and ebooks relevant to the user’s interests.
-          The best part is that these resources are available and accessable through the app, making RFRM a multimedia, educational conglomerate.
+          <strong>Sketches to Designing:</strong> I sketched forms with pencil and paper for some ideas and wireframes as a jumping point. After reiterating these sketches into digital medium fidelity wireframes, I proceeded with some testing,
+          receiving feedback from potential users. and later refined the designs to high-fidelity wireframes.
+        </p>
       </div>
     </div>
 
     <div class="project-content">
-      <h3>Challenges</h3>
-      <p>One challenge for creating an app that houses multiple types of media was designing an interface that emphasized important trending headlines and highlighted the cover art of podcasts and books.
-        <br>
-        <br>
-        The solution? A lot of trial and error. In the end, the result was an off white background, with white element element containers to let the cover art shine and enough white space to let the headlines speak for themselves.
-      </p>
+      <picture>
+        <source srcset="img/artlo/@1x/artlo-prelim.png" media="(max-width:767px)">
+        <img class="project-img artlo" src="img/artlo/@2x/artlo-prelim@2x.png" alt="ARTLO. Preliminary Sketches">
+      </picture>
+      <picture>
+        <source srcset="img/artlo/@1x/artlo-low.png" media="(max-width:767px)">
+        <img class="project-img artlo" src="img/artlo/@2x/artlo-low@2x.png" alt="ARTLO. Preliminary Sketches">
+      </picture>
+      <picture>
+        <source srcset="img/artlo/@1x/artlo-mid.png" media="(max-width:767px)">
+        <img class="project-img artlo" src="img/artlo/@2x/artlo-mid@2x.png" alt="ARTLO. Preliminary Sketches">
+      </picture>
+    </div>
+
+    <div class="project-content">
+      <h3>Role</h3>
+      <p>UX/UI Designer</p>
+    </div>
+
+    <div class="project-content">
+      <h3>Key Features</h3>
+      <ul class="artlo-features">
+        <li>Location selection</li>
+        <li>Multimedia platform - blogs, articles, products/shops</li>
+        <li>Ability to access product posts, reviews, and receipts</li>
+      </ul>
     </div>
 
     <div class="project-content">
       <h3>Styling</h3>
-      <p>Choosing the right color palette and fonts were crucial in developing a professional and trustworthy tone.</p>
-      <div class="rfrm-styling">
-        <img class="rfrm-project-img" src="img/rfrm/@1x/rfrm-color-palette.png" alt="RFRM Color Palette">
-        <h3 class="rfrm-style-1">Aa Bb Cc Dd</h3>
-        <p class="rfrm-style-1">DM Serif Display - Heading Text</p>
-        <h3 class="rfrm-style-2"> Aa Bb Cc Dd</h3>
-        <p class="rfrm-style-2">SF Pro Text - iOS Body Text</p>
-        <h3 class="rfrm-style-3">Aa Bb Cc Dd</h3>
-        <p class="rfrm-style-3">Roboto - Android Body Text</p>
+      <div class="artlo-styling">
+        <picture>
+          <source srcset="img/artlo/@1x/artlo-color.png" media="(max-width:767px)">
+          <img class="project-img artlo color" src="img/artlo/@2x/artlo-color@2x.png" alt="ARTLO. Color Palette">
+        </picture>
+        <div class="artlo-styling">
+          <h4 class="artlo-style-1">Aa Bb Cc Dd</h4>
+          <p class="artlo-style-1">Avenir Next - Bold</p>
+          <h4 class="artlo-style-2"> Aa Bb Cc Dd</h4>
+          <p class="artlo-style-2">Avenir Next - Demi Bold</p>
+          <h4 class="artlo-style-3">Aa Bb Cc Dd</h4>
+          <p class="artlo-style-3">Avenir Next - Regular</p>
+        </div>
       </div>
-      <p>The shades of green invoke feelings of neutrality and calm, while the off-white background replicates the tone of newspaper.
-        <br>
-        <br>
-        The serif heading font was chosen for its high contrast forms and elegant stylization, bringing the eye to important headings. The body text is easily legible at any size with SF Pro Text for iOS displays and Roboto for Android users.
-      </p>
+    </div>
     </div>
 
-    <div class="project-background bottom">
-      <div class="project-title screens">
-        <h3>iOS Screens</h3>
-      </div>
-      <img class="dimes-project-img" src="img/rfrm/@1x/rfrm-ios.png" alt="RFRM iOS Screens">
-      <div class="project-title screens">
-        <h3>Android Screens</h3>
-      </div>
-      <img class="dimes-project-img" src="img/rfrm/@1x/rfrm-android.png" alt="RFRM Android Screens">
+    <div class="project-content">
+      <h3>Final Designs</h3>
+      <p>The high-fidelity frames needed some minor tweaks to the content and images to become the full and final interface designs. </p>
+      <picture>
+        <source srcset="img/artlo/@1x/artlo-final.png" media="(max-width:767px)">
+        <img class="project-img artlo" src="img/artlo/@2x/artlo-final@2x.png" alt="ARTLO. Final Designs">
+      </picture>
     </div>
-
-
-
   </main>
   <footer id="contact">
     <div class="contact-info">

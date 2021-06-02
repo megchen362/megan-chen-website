@@ -11,22 +11,27 @@
 </head>
 
 <body class="project-header">
-  <header>
-    <div id="nav">
-      <a href="index.html">
+  <header class="header">
+    <nav class="navbar">
+      <a href="#">
         <img class="header-logo" alt="Megan's Lil Logo" src="img/general/header-logo.svg">
       </a>
-      <div class="navtoggle" id="myNavToggle">
-        <nav>
-          <ul class="header-nav">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </nav>
-      </div>
-    </div>
   </header>
   <main>
     <button onclick="topFunction()" id="button-top" title="Button's Up!">

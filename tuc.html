@@ -11,22 +11,27 @@
 </head>
 
 <body class="project-header">
-  <header>
-    <div id="nav">
-      <a href="index.html">
+  <header class="header">
+    <nav class="navbar">
+      <a href="#">
         <img class="header-logo" alt="Megan's Lil Logo" src="img/general/header-logo.svg">
       </a>
-      <div class="navtoggle" id="myNavToggle">
-        <nav>
-          <ul class="header-nav">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </nav>
-      </div>
-    </div>
   </header>
   <main>
     <button onclick="topFunction()" id="button-top" title="Button's Up!">
@@ -36,7 +41,10 @@
     </button>
 
     <div class="project-background tuc top">
-      <img class="project-img title tuc" src="img/tuc/@1x/tuc-cover-img.png" alt="The Unseasoned Chef Project">
+      <picture>
+        <source srcset="img/tuc/@1x/tuc-cover-img.png" media="(max-width:767px)">
+        <img class="project-img title tuc" src="img/tuc/@2x/tuc-cover-img@2x.png" alt="The Unseasoned Chef Project">
+      </picture>
       <div class="project-content title tuc">
         <h1>The Unseasoned Chef</h1>
       </div>
@@ -50,7 +58,10 @@
     </div>
 
     <div class="project-background tuc">
-      <img class="project-img tuc multi-mockup" src="img/tuc/@1x/tuc-multi-screen.png" alt="TUC Multi-Mockup">
+      <picture>
+        <source srcset="img/tuc/@1x/tuc-multi-screen.png" media="(max-width:767px)">
+        <img class="project-img tuc multi-mockup" src="img/tuc/@2x/tuc-multi-screen@2x.png" alt="TUC Multi-Mockup">
+      </picture>
       <div class="project-content multi-mockup">
         <h3>Objective</h3>
         <p>This is a responsive web application that will provide beginner chefs with cooking lessons, recipe discovery, and healthy eating tips for users who want to become more comfortable in the kitchen.</p>
@@ -58,7 +69,10 @@
     </div>
 
     <div class="img-container">
-      <img class="project-img tuc mockup" src="img/tuc/@1x/tuc-recipe-mock.png" alt="The Unseasoned Chef Recipe">
+      <picture>
+        <source srcset="img/tuc/@1x/tuc-recipe-mock.png" media="(max-width:639px)">
+        <img class="project-img tuc mockup" src="img/tuc/@2x/tuc-recipe-mock@2x.png" alt="The Unseasoned Chef Recipe">
+      </picture>
     </div>
 
     <div class="project-content">
@@ -106,9 +120,18 @@
           <strong>80%</strong> of users claim their journey to comfort in the kitchen <strong>began when they went college.</strong>
         </p>
         <p>Based on these findings, I created three user personas to inform my preliminary sketches and wireframes, focusing on key features like instructional videos and a diet filter option. </p>
-        <img class="project-img tuc persona" src="img/tuc/@1x/tuc-marco.png" alt="User Persona 1">
-        <img class="project-img tuc persona" src="img/tuc/@1x/tuc-jessica.png" alt="User Persona 2">
-        <img class="project-img tuc persona" src="img/tuc/@1x/tuc-claire.png" alt="User Persona 3">
+        <picture>
+          <source srcset="img/tux/@1x/tuc-marco.png" media="(max-width:767px)">
+          <img class="project-img tuc persona" src="img/tuc/@2x/tuc-marco@2x.png" alt="User Persona 1">
+        </picture>
+        <picture>
+          <source srcset="img/tuc/@1x/tuc-jessica.png" media="(max-width:767px)">
+          <img class="project-img tuc persona" src="img/tuc/@2x/tuc-jessica@2x.png" alt="User Persona 2">
+        </picture>
+        <picture>
+          <source srcset="img/tuc/@1x/tuc-claire.png" media="(max-wdith:767px)">
+          <img class="project-img tuc persona" src="img/tuc/@2x/tuc-claire@2x.png" alt="User Persona 3">
+        </picture>
       </div>
     </div>
 

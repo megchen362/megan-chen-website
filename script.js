@@ -1,19 +1,21 @@
-console.log("hey there.");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-function menuToggle() {
-  var x = document.getElementById('myNavToggle');
-  if (x.className === 'navtoggle') {
-    x.className += ' responsive';
-  } else {
-    x.className = 'navtoggle';
-  }
-};
+hamburger.addEventListener("click", mobileMenu);
 
-let mainNavLinks = document.querySelectorAll("nav ul.scroll-nav li a");
-let mainSections = document.querySelectorAll("main section");
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
 
-let lastId;
-let cur = [];
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
 
 //Get the button:
 mybutton = document.getElementById("button-top");
