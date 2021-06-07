@@ -836,7 +836,7 @@ footer {
 
 .home-logo {
   width: 75%;
-  left: 10em;
+  left: 4em;
   top: 1em;
 }
 
@@ -859,6 +859,18 @@ footer {
   background-size: 100% 100%;
   transition: all 0.4s;
   position: relative;
+  height: 30em;
+}
+
+.card.expanded {
+  height: 30em;
+}
+
+.card.expanded.dimes-preview {
+  height: 30em;
+}
+
+.card.expanded.wide {
   height: 30em;
 }
 
