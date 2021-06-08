@@ -294,7 +294,7 @@ footer {
 /* === Home page styling === */
 .hero {
   background-image: url('../img/home/background-home-320px.png');
-  background-size: 100% 100%;
+  background-size: 100% 150%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -802,6 +802,7 @@ li.nav-item {
   padding-top: 10px;
   padding-bottom: 7px;
 }
+
 /* === Footer ===*/
 
 footer {
@@ -834,15 +835,21 @@ footer {
 
  /*=== Main ===*/
 
+ .hero {
+   background-image: url('../img/home/background-home-640px.png');
+   background-size: 100% 150%;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
 .home-logo {
-  width: 75%;
+  width: 65%;
   left: 4em;
   top: 1em;
 }
 
 .hero-text {
   top: 20em;
-  left: 3em;
+  left: 4em;
 }
 
 .grid {
@@ -1192,6 +1199,13 @@ li.nav-item {
   margin-left: 4em;
 }
 
+.hero {
+  background-image: url('../img/home/background-home-1024px.png');
+  background-size: 100% 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .hero-landing {
   margin-top: 5em;
   margin-left: 2em;
@@ -1201,21 +1215,23 @@ li.nav-item {
 
 .hero-text {
   text-align: left;
-  margin-left: 2em;
-  top: 22em;
+  margin-left:1em;
+  top: 19em;
 }
 
 .hero-text h1 {
-  font-size: 48px;
+  font-size: 40px;
+  margin-bottom: 0;
 }
 
 .hero-text p {
-  font-size: 24px;
+  margin-top: 0.5em;
+  font-size: 20px;
 }
 
 .home-logo {
   left: 8em;
-  width: 70%;
+  width: 60%;
 }
 
 /*=== main page ===*/
@@ -1381,7 +1397,7 @@ li.nav-item {
 }
 
 .hero {
-  background-size: 100% 100%;
+  background-size: 100% 150%;
   background-position: top;
 }
 
