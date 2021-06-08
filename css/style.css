@@ -12,6 +12,12 @@ html {
    url('../files/fonts/montserrat-regular.ttf')  format('truetype');
 }
 
+@font-face {
+  font-family: 'Syne';
+  src: url('../files/fonts/syne.woff') format('woff'),
+   url('../files/fonts/syne.ttf')  format('truetype');
+}
+
 body {
   width: 100vw;
   height: 100vh;
