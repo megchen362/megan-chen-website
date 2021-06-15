@@ -306,7 +306,7 @@ footer {
 /* === Home page styling === */
 .hero {
   background-image: url('../img/home/background-home-320px.png');
-  background-size: 100% 150%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
